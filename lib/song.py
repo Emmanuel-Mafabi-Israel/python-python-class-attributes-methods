@@ -4,6 +4,7 @@
 
 class Song:
     # Class scope - Global scope
+    # Global Variables
     count:int = 0
     genre_count:dict  = {}
     artist_count:dict = {}
@@ -14,8 +15,7 @@ class Song:
     def __init__(self, name:str, artist:str, genre:str):
         self.name   = name
         self.artist = artist
-        self.genre  = genre
-
+        self.genre  = genregit
         Song.add_song_to_count()
         Song.add_to_artists(artist)
         Song.add_song_to_genre(genre)
